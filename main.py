@@ -1,30 +1,29 @@
-#scope ===> what variable do i have access to?
-#1 - start with local
-#2 - parent local?
-#3 - Global
-#4 - Built in python function
+#OOP
+#no private thisng in python. use _name as convention.
+class PlayerCharacter:
+    membership = True #class Object attribute
 
-a = 1
-def conf1():
-	a = 2
-	return a
-def conf2():
-	global a #global or nonlocal can be used
-	a= 3
-	return a
+    def __init__(self,name,age):
+        self.name= name
+        self.age = age
 
-def conf3(a):
-	a= 4
-	return a
+    def run(self):
+        print("Run ",self.name)
 
-print("once  ", a)
-print("exec  ", conf1())
-print("sonra ", a)
+    def shout(self):
+        print(f"My name is {self.name}")
 
-print("once  ", a)
-print("exec  ", conf2())
-print("sonra ", a)
+    @classmethod
+    def adding_things(cls,num1, num2):
+        return cls("Deneme",num1 + num2)
+    @staticmethod
+    def adding_things2(num1, num2):
+        return num1 + num2
+#help(PlayerCharacter)
 
-print("once  ", a)
-print("exec  ", conf3(a))
-print("sonra ", a)
+player1= PlayerCharacter("Enver", 20)
+player1.run()
+print(PlayerCharacter.adding_things2(1,2))
+print(player1.adding_things(4,5))
+
+

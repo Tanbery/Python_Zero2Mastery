@@ -28,5 +28,3 @@ print("sonra ", a)
 print("once  ", a)
 print("exec  ", conf3(a))
 print("sonra ", a)
-
-print|("Hello Naber?")

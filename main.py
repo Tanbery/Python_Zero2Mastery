@@ -1,29 +1,24 @@
-#OOP
-#no private thisng in python. use _name as convention.
-class PlayerCharacter:
-    membership = True #class Object attribute
+class User:
+    def  sign_in(self):
+        print("logged in")
 
-    def __init__(self,name,age):
-        self.name= name
-        self.age = age
+class Wizard(User):
+    def __init__(self, name ,power):
+        self.name= name 
+        self.power = power
+    def attack(self):
+        print(f"attack with power {self.power}")
 
-    def run(self):
-        print("Run ",self.name)
+class Archer(User):
+    def __init__(self, name ,num_arrow):
+        self.name= name 
+        self.num_arrows = num_arrow
+    def attack(self):
+        print(f"attack with power {self.num_arrows}")
 
-    def shout(self):
-        print(f"My name is {self.name}")
+wz1= Wizard("Merlin",50)
+ar1= Archer("Robin",100)
+print(wz1.sign_in())
 
-    @classmethod
-    def adding_things(cls,num1, num2):
-        return cls("Deneme",num1 + num2)
-    @staticmethod
-    def adding_things2(num1, num2):
-        return num1 + num2
-#help(PlayerCharacter)
-
-player1= PlayerCharacter("Enver", 20)
-player1.run()
-print(PlayerCharacter.adding_things2(1,2))
-print(player1.adding_things(4,5))
-
-
+wz1.attack()
+ar1.attack()

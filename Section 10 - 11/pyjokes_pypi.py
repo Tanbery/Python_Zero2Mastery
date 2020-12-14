@@ -1,3 +1,4 @@
+#pip install pyjokes ==> must be done before using it
 import pyjokes as pj
 
 joke = pj.get_joke()

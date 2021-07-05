@@ -8,5 +8,5 @@ jokes = pj.get_jokes()
 print("All Jokes: ")
 i=1
 for joke in jokes:
-    print( i,":", joke)
+    print( i,"\t:", joke)
     i+=1

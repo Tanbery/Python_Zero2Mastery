@@ -20,10 +20,10 @@ myset2 = {num       for num in range(0,100)}
 myset3 = {num**2    for num in range(0,100)}
 myset4 = {num**2    for num in range(0,100) if num % 2 == 0}
 
-print('Set1:', myset1)
-print('Set2:', myset2)
-print('Set3:', myset3)
-print('Set4:', myset4)
+print('Set1:', sorted(myset1))
+print('Set2:', sorted(myset2))
+print('Set3:', sorted(myset3))
+print('Set4:', sorted(myset4))
 
 simple_dict = {
     "a":1,

@@ -19,7 +19,7 @@ print('Hello {0}. You are {1} years old'.format(name, age))
 print('---------------------------')
 
 #[start:stop:stepover]
-selfish = '0123456789'
+selfish = "0123456789"
 
 print('selfish        --> ' + selfish)
 print('length(selfish)--> ' + str(len(selfish)))
@@ -36,10 +36,10 @@ print('---------------------------')
 is_cool = False
 print('is cool? ' + str(is_cool))
 
-print('---------------------------')
-birthYear= input('What year were you born?')
-age = 2020 - int(birthYear)
-print(f'You were born at {birthYear} and you are {age} years old')
+#print('---------------------------')
+#birthYear= input('What year were you born?')
+#age = 2020 - int(birthYear)
+#print(f'You were born at {birthYear} and you are {age} years old')
 
 
 print('---------------------------')
@@ -62,9 +62,9 @@ amz_cart.insert(2,"deneme345") #no return
 amz_cart2 = amz_cart.extend("deneme567")
 
 #removing
-amz_cart.pop() #remove lastone or indexed one and return the removed item
-amz_cart.remove('toys') #remove by value and no return
-amz_cart.clear() #remove all 
+#amz_cart.pop() #remove lastone or indexed one and return the removed item
+#amz_cart.remove('toys') #remove by value and no return
+#amz_cart.clear() #remove all 
 
 #Index
 amz_cart.index('sunglasses') #return first index
@@ -109,8 +109,8 @@ print('a' in dictionary.items())
 #dictionary.clear()
 #new_dict = dictionary.copy()
 #dictionary.pop('a')
-dictionary.update('x',105)#if no key value, it creates new key+value pair
-
+dictionary.update({'x':105})#if no key value, it creates new key+value pair
+print(dictionary)
 
 #print('---------------------------')
 ##Tuple...

@@ -63,4 +63,3 @@ def fib(number):
 
 for item in fib(20):
     print(item)
-

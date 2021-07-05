@@ -91,7 +91,7 @@ print("\nDunder Methods")
 print("Dunder Methods: ", dir(wz1))
 
 #check the method resolution order
-#print(wz1.__mro__)
+#print(wz1.__mro__())
 
 class Toy():
     def __init__(self, color, age):

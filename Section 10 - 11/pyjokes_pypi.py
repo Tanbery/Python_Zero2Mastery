@@ -1,10 +1,11 @@
 #pip install pyjokes ==> must be done before using it
-import pyjokes as pj
+#import pyjokes as pj
 
-joke = pj.get_joke()
-print("A Joke:", joke)
+from pyjokes import  get_joke, get_jokes
+joke = get_joke()
+print("A Joke: ", joke)
 
-jokes = pj.get_jokes()
+jokes = get_jokes()
 print("All Jokes: ")
 i=1
 for joke in jokes:
